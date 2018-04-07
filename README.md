@@ -26,4 +26,11 @@ sudo pip install telepot
 Please look at this link how to setup a telegram bot and how to get your chatID + telegram api key
 https://www.forsomedefinition.com/automation/creating-telegram-bot-notifications/
 ```
-
+### Set Script autostart on Raspberry
+```
+sudo nano /etc/rc.local
+```
+Add line 
+```
+sudo python /home/pi/wtc.py &
+```
