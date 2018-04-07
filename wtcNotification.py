@@ -16,7 +16,6 @@ while True:
         if start == 0:
             bot = telepot.Bot(telegramBot) 
             bot.sendMessage(chatId, "Initiated Script" ) 
-            start=1
             r = requests.get('http://walchain.info:18950/api/getBalance/'+miningAddress)
             data = r.text
             j= json.loads(data)
@@ -24,6 +23,7 @@ while True:
             data2 = r2.text
             j2= json.loads(data2)
             amount = str(j2['return_counts'])
+            start=1
             time.sleep(10)
         else:
             bot = telepot.Bot(telegramBot) 
