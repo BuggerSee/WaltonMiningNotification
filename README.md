@@ -18,6 +18,7 @@ What things you need to install the software and how to install them
 
 ```
 sudo pip install requests
+sudo pip install telepot
 ```
 
 ### Telegram Setup

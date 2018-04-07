@@ -2,16 +2,15 @@ import time
 import random
 import datetime
 import json
-import urllib2
 import telepot
 import requests
 from telepot.loop import MessageLoop
 
 amount = 0
 start=0
-miningAddress = ''
-chatId = ''
-telegramBot = ''
+miningAddress = ''		""" Insert Mining Address """
+chatId = 			""" Insert chatID """
+telegramBot = ''		""" Insert Telegram Bot Key """
 while True:
     try:
         if start == 0:
