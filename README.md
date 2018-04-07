@@ -30,7 +30,7 @@ https://www.forsomedefinition.com/automation/creating-telegram-bot-notifications
 ```
 sudo nano /etc/rc.local
 ```
-Add line 
+#### Add line 
 ```
 sudo python /home/pi/wtc.py &
 ```
