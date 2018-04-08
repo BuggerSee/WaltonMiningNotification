@@ -20,11 +20,9 @@ while True:
             data = r.text
             j= json.loads(data)
             r2 = requests.get('http://walchain.info:18950/api/getMinedBlocksPagination/'+miningAddress+'/1/5000')
-            r2 = requests.get('http://beelazy.de/test.php')
             data2 = r2.text
             j2= json.loads(data2)
             amount = str(j2['return_counts'])
-            print(str(j2['return_counts']))
             start=1
             time.sleep(10)
         else:
